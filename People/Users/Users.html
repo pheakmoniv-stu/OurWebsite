@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Usres.css">
+  <!-- Lnkicon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="hearder">
+    <!--Hearder -->
+    <div class="navbar-left">
+      <img src="/img/logo.png" alt="Logo">
+      <a href="/Dashboard/Full Dashboard/Dashboard-1.html"> <img src="/img/hamburger-icon.png" alt="Logo"></a>
+
+    </div>
+    <div class="navbar-right">
+      <div class="Dashboard">
+        <button type="button" id="button">
+          POS
+        </button>
+        <script>
+          document.getElementById("button").onclick = function () {
+            // ប្រើ JavaScript ដើម្បីផ្លាស់ប្តូរទំព័រ
+            window.location.href = "/POS/index.html";
+          };
+        </script>
+      </div>
+      <img src="/img/bell.png" alt="bell">
+      <div class="profile">
+        <img src="/img/profile.jpg">
+      </div>
+    </div>
+  </div>
+
+  <!-- Box-center -->
+  <div class="Box-center">
+    <h2 class="h2">Users Management</h2>
+    <hr class="hr">
+    <!-- Box-List -->
+    <div class="Box-List">
+      <!-- Search -->
+      <div class="search">
+        <div class="search-left">
+          <img src="/img/icons8-search-48.png" alt="">
+          <input type="search" placeholder="Search this table">
+        </div>
+        <div class="file-right">
+          <div class="Filter">
+            <img src="/img/filter.png" alt="">
+            <p class="filter">Filter</p>
+          </div>
+          <div class="PDF">
+            <img src="/img/file-pdf.png" alt="">
+            <p class="pdf">PDF</p>
+          </div>
+          <div class="EXCEL">
+            <img src="/img/Excel-icon.png" alt="">
+            <p class="excel">EXCEL</p>
+          </div>
+          <div class="Creat">
+            <img src="/img/add.png" alt="">
+            <p class="creat">Creat</p>
+          </div>
+        </div>
+      </div>
+      <!-- Box-center-1 -->
+      <div class="Box-center-table">
+        <table>
+          <tr>
+            <th>First Name</th>
+            <th><img src="/img/sort.png">Last Name</th>
+            <th><img src="/img/sort.png">Username</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+          <tr>
+            <td>Bunlead</td>
+            <td>Hong</td>
+            <td>Owner</td>
+            <td>owner@gamil.com</td>
+            <td>01236521</td>
+            <!-- Button hole -->
+            <td><input type="checkbox" id="toggle-switch" class="toggle"></td>
+            <td><i class="fa-regular fa-pen-to-square"></i></td>
+          </tr>
+          <tr>
+            <td>Seyha</td>
+            <td>Yem</td>
+            <td>Admin</td>
+            <td>admin@gmail.com</td>
+            <td>096009088</td>
+            <td><input type="checkbox" id="toggle-switch" class="toggle"></td>
+            <td><i class="fa-regular fa-pen-to-square"></i></td>
+          </tr>
+          <tr>
+            <td>Sang</td>
+            <td>Leng</td>
+            <td>Sale</td>
+            <td>sang@gmail.com</td>
+            <td>090002099</td>
+            <td><input type="checkbox" id="toggle-switch" class="toggle"></td>
+            <td><i class="fa-regular fa-pen-to-square"></i></td>
+          </tr>
+          <tr>
+            <td>Sokleng</td>
+            <td>Nhor</td>
+            <td>Sale</td>
+            <td>sokleng@gmail.com</td>
+            <td>09722999</td>
+            <td><input type="checkbox" id="toggle-switch" class="toggle"></td>
+            <td><i class="fa-regular fa-pen-to-square"></i></td>
+          </tr>
+          <tr>
+            <td>Pheakmoni</td>
+            <td>Vanna</td>
+            <td>Sale</td>
+            <td>pheakmonig@gmail.com</td>
+            <td>012999888</td>
+            <td><input type="checkbox" id="toggle-switch" class="toggle"></td>
+            <td><i class="fa-regular fa-pen-to-square"></i></td>
+          </tr>
+          <tr>
+            <td>Chhom</td>
+            <td>Chhorn</td>
+            <td>Sale</td>
+            <td>chhomg@gmail.com</td>
+            <td>069887799</td>
+            <td><input type="checkbox" id="toggle-switch" class="toggle"></td>
+            <td><i class="fa-regular fa-pen-to-square"></i></td>
+          </tr>
+        </table>
+
+        <!-- Box-center-1-footder -->
+        <div class="Box-footder">
+          <div class="fooder-left">
+            <p>Rows per page: <input type="number"></p>
+          </div>
+          <div class="fooder-right">
+            <p>1-2 of 2 <i class="fa-solid fa-angle-left"></i> prev next <i
+                class="fa-duotone fa-solid fa-angle-right"></i></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Menu Box-left -->
+  <!-- Box-1 -->
+  <div class="Box-left">
+    <div class="box-1">
+      <a href="/Dashboard/dashboard.html"> <img src="/img/dashboard.png" alt="">
+        <p>Dashboard</p>
+      </a>
+    </div>
+    <!-- Box-2 -->
+    <div class="box-2">
+      <img src="/img/food-bar.png" alt="">
+      <button class="category-toggle-btn" onclick="toggleSidebar()">Product</button>
+
+    </div>
+    <!-- Box-3 -->
+    <div class="box-3">
+      <img src="/img/people.png" alt="">
+      <button class="category-toggle-btn" onclick="togglePeopleSidebar()">People</button>
+
+    </div>
+    <!-- Box-4 -->
+    <div class="box-4">
+      <img src="/img/setting.png" alt="">
+      <button class="category-toggle-btn" onclick="togglesettingSidebar()">Setting</button>
+
+    </div>
+    <!-- Box-5 -->
+    <div class="box-5">
+      <img src="/img/report.png" alt="">
+      <button class="category-toggle-btn" onclick="togglereportsSidebar()">Reports</button>
+
+    </div>
+  </div>
+
+  <!-- Slide-Box-2-->
+  <div id="productSidebar" class="sidebar">
+    <div class="sidebar-header">
+      <button class="close-btn" onclick="toggleSidebar()">
+        <i class="fas fa-times"></i> </button>
+      <!-- Creat product,  All product, Categoty  -->
+    </div>
+    <div class="Create-icon">
+      <img src="/img/add-properties.png" alt="">
+      <a href="/Product/Creat Product/Creat-product.html">
+        <p>Creat Products</p>
+      </a>
+
+    </div>
+    <div class="All-Product-icon">
+      <img src="/img/All product.png" alt="">
+      <a href="/Product/All Product/All-Product.html">
+        <p>All Products</p>
+      </a>
+    </div>
+    <div class="Catagoty-icon">
+      <img src="/img/category.png" alt="">
+      <a href="/Product/Catagory/Catagoty.html">
+        <p>Catagory</p>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Slide-Box-3-->
+  <div id="peopleSidebar" class="sidebar">
+    <div class="sidebar-header">
+      <button class="close-btn" onclick="togglePeopleSidebar()">
+        <i class="fas fa-times"></i> </button>
+      <!-- Costomers, Users -->
+    </div>
+    <div class="Costomers-icon">
+      <img src="/img/customers.png" alt="">
+      <a href="/People/Customers/Costomers.html">
+        <p>Costomers</p>
+      </a>
+
+    </div>
+    <div class="Users-icon">
+      <img src="/img/user.png" alt="">
+      <a href="">
+        <p>Users</p>
+      </a>
+    </div>
+  </div>
+
+  <!-- Slide-Box-4-->
+  <div id="settingSidebar" class="sidebar">
+    <div class="sidebar-header">
+      <button class="close-btn" onclick="togglesettingSidebar()">
+        <i class="fas fa-times"></i> </button>
+      <!-- Costomers, Users -->
+    </div>
+    <div class="System-Setting-icon">
+      <img src="/img/system-setting.png" alt="">
+      <a href="/Setting/System Setting/System.html">
+        <p>System Setting</p>
+      </a>
+
+    </div>
+    <div class="POS-Setting-icon">
+      <img src="/img/sell-80.png" alt="">
+      <a href="/Setting/POS Setting/POS-Setting.html">
+        <p>POS Setting</p>
+      </a>
+    </div>
+    <div class="Currency-icon">
+      <img src="/img/currency-exchange.png" alt="">
+      <a href="/Setting/Currency/Currency.html">
+        <p>Currency</p>
+      </a>
+    </div>
+    <div class="Back-Up-icon">
+      <img src="/img/data-backup.png" alt="">
+      <a href="/Setting/Back Up/Back-Up.html">
+        <p>Back Up</p>
+      </a>
+    </div>
+  </div>
+
+  <!-- Slide-Box-5-->
+  <div id="reportsSidebar" class="sidebar">
+    <div class="sidebar-header">
+      <button class="close-btn" onclick="togglereportsSidebar()">
+        <i class="fas fa-times"></i> </button>
+      <!-- Costomers, Users -->
+    </div>
+    <div class="Sale-Report-icon">
+      <img src="/img/report-50.png" alt="">
+      <a href="/Reports/Sale Report/Sale Report.html">
+        <p>Sale Report</p>
+      </a>
+
+    </div>
+    <div class="Product-Repoart-icon">
+      <img src="/img/report-50.png" alt="">
+      <a href="/Reports/Product Report/Product Report.html">
+        <p>Product Repoart</p>
+      </a>
+    </div>
+    <div class="Customer-Repoart-icon">
+      <img src="/img/report-50-20.png" alt="">
+      <a href="/Reports/Customer Report/Customer Report.html">
+        <p>Customer Repoart</p>
+      </a>
+    </div>
+    <div class="Top-Selling-icon">
+      <img src="/img/report-80.png" alt="">
+      <a href="/Reports/Top Selling/Top Selling.html">
+        <p>Top Selling</p>
+      </a>
+    </div>
+    <div class="Best-Customer-icon">
+      <img src="/img/report-64.png" alt="">
+      <a href="/Reports/Best Customers/Best Customer.html">
+        <p>Best Customer</p>
+      </a>
+    </div>
+    <div class="Users-Repoarts-icon">
+      <img src="/img/report-80-20.png" alt="">
+      <a href="/Reports/Users Reports/Users Repoet.html">
+        <p>Users Repoarts</p>
+      </a>
+    </div>
+  </div>
+
+  <!-- script -->
+  <script>
+    function toggleSidebar() {
+      document.getElementById("productSidebar").classList.toggle("open");
+    }
+    function togglePeopleSidebar() {
+      document.getElementById("peopleSidebar").classList.toggle("open");
+    }
+    function togglesettingSidebar() {
+      document.getElementById("settingSidebar").classList.toggle("open");
+    }
+    function togglereportsSidebar() {
+      document.getElementById("reportsSidebar").classList.toggle("open");
+    }
+  </script>
+
+  <!-- Box-buttom Copyright-->
+  <div class="Box-buttom">
+    <h4>Assignment Restaurant Manager</h4>
+    <hr>
+    <p>&COPY; 2025 Developer by Hong Bunleab</p>
+    <p>All rights reserver - v1.0 </p>
+  </div>
+
+</body>
+<script src="Java.JS"></script>
+</html>

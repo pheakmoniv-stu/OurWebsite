@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Dashboard-1.css">
+    <title>Document</title>
+</head>
+
+<body>
+    
+     
+    <div class="hearder">
+        <!--Hearder -->
+        <div class="navbar-left">
+            <a href="/Dashboard/dashboard.html"><img src="/img//logo.png" alt="Logo"></a>
+       <img src="/img/hamburger-icon.png">
+          
+        </div>
+
+        <div class="navbar-right">
+           <div class="Dashboard">
+                <button type="button" id="button">
+                    POS
+                </button>
+                <script>
+                document.getElementById("button").onclick = function () {
+                    // ប្រើ JavaScript ដើម្បីផ្លាស់ប្តូរទំព័រ
+                    window.location.href = "/POS/index.html";
+                };
+            </script>
+            </div>
+           <img src="/img/bell.png" alt="bell">
+           <div class="profile">
+            <img src="/img/profile.jpg" >
+           </div>
+        </div>
+    </div>
+    
+    <!-- Box-Center top -->
+      <div class="Box-center-top">
+      <div class="card-1">
+        <div class="icon-1"><img src="/img/sale.png" ></div>
+        <div class="text-1">
+          <p>Sales</p>
+          <h3>$850.00</h3>
+        </div>
+      </div>
+      <div class="card-2">
+        <div class="icon-2"><img src="/img/products.png" alt=""></div>
+        <div class="text-2">
+          <p>Products</p>
+          <h3>235</h3>
+        </div>
+      </div>
+      <div class="card-3">
+        <div class="icon-3"><img src="/img/income.png" alt=""></div>
+        <div class="text-3">
+          <p>Income</p>
+          <h3>$2350.00</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Box-center -->
+     <div class="Box-center">
+
+      <!-- Box-center-left -->
+       <div class="Box-center-letf">
+        <div class="line">
+          <h3>Sale This Week</h3>
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <canvas id="myLineChart"></canvas>
+        </div>
+       </div>
+       
+       <!-- Box-center-right -->
+        <div class="Box-center-right">
+        <div class="title">
+          <p>Top Seling Product (2025)</p>
+        <img src="/img/food.jpg">
+        </div>
+        <p>Spaghetti Carbonara</p>
+        <h3> $ 250.00</h3>
+       </div>
+     </div>
+
+     <!-- Box-buttom -->
+      <div class="Box-buttom">
+        <h4>Assignment Restaurant Manager</h4>
+        <hr>
+        <p>&COPY; 2025 Developer by Hong Bunleab</p>
+        <p>All rights reserver - v1.0 </p>
+      </div>
+    
+</body>
+  <script src="Java.JS"></script>
+
+</html>
