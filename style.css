@@ -1,0 +1,752 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.hearder {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-left {
+  width: 200px;
+  height: 80px;
+
+}
+
+.navbar-left img {
+  width: 60px;
+  margin-top: 8px;
+  padding-left: 35px;
+}
+
+.navbar-right {
+  width: 200px;
+  height: 80px;
+  align-items: center;
+  display: flex;
+  margin-right: 35px;
+}
+
+.navbar-right .Dashboard button {
+  color: #fcfdff;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 8px 20px;
+  border: 2px solid #8d8d8d;
+  border-radius: 20px;
+  background-color: #0b9dff;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  margin-right: 30px;
+  transition: 0.5px;
+}
+
+.navbar-right .Dashboard button:hover {
+  background-color: rgb(255, 1, 77);
+  transform: scale(1.1);
+}
+
+.navbar-right img {
+  width: 38px;
+
+}
+
+.navbar-right .profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #ff0000;
+  border: 2px solid #aaa9a9;
+}
+
+/* Box */
+.Box {
+  width: 100%;
+  height: 730px;
+  margin-top: 2px;
+  background-color: rgb(221, 221, 220);
+  display: flex;
+  justify-content: space-between;
+}
+
+.Box-left {
+  width: 49%;
+  height: 720px;
+  border-radius: 0px 0px 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+}
+
+.top {
+  margin-top: 20px;
+  height: 40px;
+  display: flex;
+}
+
+.top .search input {
+  width: 630px;
+  height: 40px;
+  margin-left: 20px;
+  border-radius: 5px;
+  border: 2px solid #b6b5b5;
+}
+
+.top img {
+  padding-left: 30px;
+  margin-top: 5px;
+  width: 40;
+}
+
+.order-table {
+  width: 700px;
+  border-collapse: collapse;
+  margin-top: 10px;
+  margin-left: 20px;
+
+}
+
+.order-table thead th {
+  height: 40px;
+  margin-left: 20px;
+  background-color: #049e5178;
+}
+
+.order-table tbody td {
+  height: 40px;
+  text-align: center;
+}
+
+.total-payable {
+  width: 700px;
+  height: 30px;
+  padding-top: 15px;
+  margin-left: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  background-color: rgb(5, 168, 119);
+  margin-top: 150px;
+  margin-bottom: 20px;
+}
+
+/* .Discount table */
+.Discount table {
+  width: 700px;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.Discount table .Tax {
+  text-align: left;
+  padding-right: 20px;
+}
+
+.Discount table .Dis {
+  padding-left: 25px;
+}
+
+.Discount table .Shipping {
+  padding-right: 29px;
+}
+
+
+/* input-group */
+.input-group {
+  height: 30px;
+  display: flex;
+  border-collapse: collapse;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+.input-group .input-1 input {
+  width: 190px;
+  height: 30px;
+}
+
+.input-group .input-2 input {
+  width: 190px;
+  margin-left: 40px;
+  height: 30px;
+}
+
+.input-group .input-3 input {
+  width: 185px;
+  margin-left: 40px;
+  height: 30px;
+}
+
+.Box-right {
+  width: 49%;
+  height: 720px;
+  border-radius: 0px 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Reset */
+.Reset {
+  width: 700px;
+  height: 40px;
+  gap: 25px;
+  display: flex;
+  border-collapse: collapse;
+  margin-left: 20px;
+}
+
+.Reset .Box-1 {
+  display: flex;
+  width: 160px;
+  height: auto;
+  border-radius: 12px;
+  background-color: #ea256d;
+  cursor: pointer;
+}
+
+.Reset .Box-1 img {
+  width: 25px;
+  height: 25px;
+  padding-top: 8px;
+  padding-left: 20px;
+}
+
+.Reset .Box-1 p {
+  padding-left: 20px;
+  padding-top: 8px;
+  font-size: 20px;
+  color: #fcfdff;
+}
+
+.Reset .Box-2 {
+  display: flex;
+  gap: 15px;
+  width: 160px;
+  height: auto;
+  border-radius: 12px;
+  background-color: #04ac2c;
+  cursor: pointer;
+}
+
+.Reset .Box-2 img {
+  width: 30px;
+  height: 30px;
+  padding-top: 5px;
+  padding-left: 13px;
+}
+
+.Reset .Box-2 p {
+  padding-top: 8px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.Reset .Box-3 {
+  width: 160px;
+  display: flex;
+  height: auto;
+  gap: 15px;
+  border-radius: 12px;
+  background-color: #bf8b06;
+  cursor: pointer;
+}
+
+.Reset .Box-3 img {
+  width: 25px;
+  height: 25px;
+  padding-top: 8px;
+  padding-left: 28px;
+}
+
+.Reset .Box-3 p {
+  padding-top: 8px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+/* Box-right */
+.Box-Top {
+  width: 700px;
+  margin-top: 10px;
+  margin-left: 25px;
+  height: 150px;
+  /* background-color: #8e9490; */
+}
+
+.Box-Top-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(128, 234, 255, 0.2);
+  border: 2px solid rgb(67, 154, 216);
+  margin-bottom: 20px;
+}
+
+.category-toggle-btn {
+  color: #053555;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.Box-Top-2 {
+  padding-top: 14px;
+  padding-left: 10px;
+  width: 99%;
+  height: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(128, 234, 255, 0.2);
+  background-color: #ffabab93;
+  border: 1px solid rgb(127, 126, 126);
+  margin-bottom: 20px;
+}
+
+.Box-Top-2 p {
+  color: #888989;
+  font-size: 15px;
+  display: flex;
+}
+
+/* Box-Menu drink*/
+.Box-Menu {
+  width: 700px;
+  height: 235px;
+  margin-left: 25px;
+  display: flex;
+}
+
+.Box-Menu .Box-Menu-Top {
+  width: 700px;
+  height: 200px;
+}
+
+.product-container {
+  display: flex;
+}
+
+.drink-1 {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(18, 18, 18, 0.2);
+  background-color: #ffffff;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.drink-1:hover {
+  transform: scale(1.05);
+}
+
+.drink-1 img {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.drink-2 {
+  width: 150px;
+  height: 150px;
+  margin-left: 33px;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(18, 18, 18, 0.2);
+  background-color: #ffffff;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.drink-2:hover {
+  transform: scale(1.05);
+}
+
+.drink-2 img {
+  width: 90%;
+  padding-left: 5px;
+  padding-top: 6px;
+}
+
+.drink-3 {
+  width: 150px;
+  height: 150px;
+  margin-left: 33px;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(30, 27, 27, 0.2);
+  background-color: #ffffff;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.drink-3:hover {
+  transform: scale(1.05);
+}
+
+.drink-3 img {
+  width: 100%;
+
+}
+
+.drink-4 {
+  width: 150px;
+  height: 150px;
+  margin-left: 33px;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(30, 27, 27, 0.2);
+  background-color: #ffffff;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.drink-4:hover {
+  transform: scale(1.05);
+}
+
+.drink-4 img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(30, 27, 27, 0.2);
+
+}
+
+.text {
+  width: 700px;
+  height: auto;
+  margin-top: 10px;
+  gap: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.drink-1-text {
+  width: 200px;
+  text-align: center;
+}
+
+.drink-2-text {
+  width: 200px;
+  text-align: center;
+}
+
+.drink-3-text {
+  width: 200px;
+  text-align: center;
+}
+
+.drink-4-text {
+  width: 200px;
+  text-align: center;
+}
+
+.text .P {
+  font-size: 18px;
+  padding: 2px;
+  color: #000000;
+}
+
+.text .H {
+  color: #d70303;
+  padding: 2px;
+  font-weight: bold;
+}
+
+/* food */
+.Menu-food {
+  width: 700px;
+  height: 230px;
+  margin-left: 25px;
+ 
+}
+
+.product-Food {
+  display: flex;
+}
+
+.food-1 {
+  width: 150px;
+  height: 150px;
+  background-color: #ffffff;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.food-1:hover {
+  transform: scale(1.05);
+}
+
+.food-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(18, 18, 18, 0.2);
+}
+
+.food-1 p {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.food-2 {
+  width: 150px;
+  height: 150px;
+  margin-left: 33px;
+  background-color: #ffffff;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.food-2:hover {
+  transform: scale(1.05);
+}
+
+.food-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(18, 18, 18, 0.2);
+
+}
+
+.food-3 {
+  width: 150px;
+  height: 150px;
+  margin-left: 33px;
+  background-color: #ffffff;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.food-3:hover {
+  transform: scale(1.05);
+}
+
+.food-3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(18, 18, 18, 0.2);
+}
+
+.food-4 {
+  width: 150px;
+  height: 150px;
+  margin-left: 33px;
+  background-color: #ffffff;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.food-4:hover {
+  transform: scale(1.05);
+}
+
+.food-4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(18, 18, 18, 0.2);
+}
+
+.text {
+  width: 700px;
+  height: auto;
+  margin-top: 10px;
+  gap: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.food-1-text {
+  width: 200px;
+  text-align: center;
+}
+
+.food-2-text {
+  width: 200px;
+  text-align: center;
+}
+
+.food-3-text {
+  width: 200px;
+  text-align: center;
+}
+
+.food-4-text {
+  width: 200px;
+  text-align: center;
+}
+
+.text .T {
+  font-size: 18px;
+  padding: 2px;
+  color: #000000;
+}
+
+.text .F {
+  color: #b90303;
+  padding: 2px;
+  font-weight: bold;
+}
+
+.list h1 {
+  background-color: red;
+}
+
+/* Slide 1 2  */
+.footder-slide{
+  width: 100%;
+  height: 50px;
+  margin-left: 40px;
+  
+}
+
+/* Category Sidebar Styling (Overlay) */
+
+.sidebar {
+  height: 680px;
+  width: 0;
+  position: fixed;
+  z-index: 100;
+  top: 80px;
+  right:0px;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar.open {
+  width: 350px;
+  padding: 20px;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+.sidebar-header h2 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #888;
+  padding: 5px 10px;
+}
+
+.close-btn:hover {
+  color: #333;
+}
+
+/* Category Grid in Sidebar */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding: 0 10px;
+  flex-grow: 1;
+}
+
+.category-card {
+  background-color: #f7f7f7;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.category-icon {
+  font-size: 3em;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon Colors */
+.all-category {
+  color: #00b24a;
+}
+
+.fast-foods {
+  color: #ff1900;
+}
+
+.hard-drink {
+  color: #fb7500;
+}
+
+.soft-drink {
+  color: #0099ff;
+}
+
+.category-card p {
+  font-weight: bold;
+  margin: 5px 0 0;
+}
+
+/* Pagination for Sidebar */
+.sidebar-pagination {
+  margin-top: 20px;
+  padding: 0 10px;
+}
+
+.sidebar-pagination .page-arrow i {
+  font-size: 0.8em;
+}
